@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- Nav bar -->
+        <nav>
+            <span class="logo"><img src="assets/logo.svg" alt=""></span>
+            <div class="hero-btns">
+                <button class="btn language">English ⯆
+                    <ul class="dropdown">
+                        <li style="list-style: none; font-weight: bold;">Hindi</li>
+                    </ul>
+                </button>
+                <button class="btn btn-red-sm"> <a href="https://www.netflix.com/login">Sign In</a></button>
+            </div>
+        </nav>
+
+        <div class="box"></div>
+
+        <!-- Hero section -->
+
+        <div class="hero">
+            <span>Unlimited movies, TV shows and more</span>
+            <span>Starts at ₹149. Cancel at any time.</span>
+            <span>Ready to watch? Enter your email to create or restart your membership.</span>
+
+            <form id="emailForm">
+                <input type="email" id="emailInput" placeholder="Email address" class="email">
+                <button type="submit" class="btn red-btn"><a href="https://www.netflix.com/signup/password?locale=en-IN">Get Started</a>  <span>&gt;</span></button>
+                <span id="emailError" class="error-message">✖ Email is required.</span>
+            </form>
+        </div>
+
+        <!-- seperation from the hero section -->
+        <div class="sepration"></div>
+    </div>
+
+    <div class="trending">
+        <h2>Trending Now</h2>
+    </div>
+
+    <!-- Sliding bar for trending shows -->
+    <div class="slider-container">
+        <button class="arrow prev" onclick="moveSlide(-1)">❮</button>
+        <div class="slider">
+            <div class="slide" style="background-image: url('assets/mismatched.webp');">
+                <div class="digits">1</div>
+            </div>
+            <div class="slide" style="background-image: url('assets/bhoolbhuliya3.webp');">
+                <div class="digits">2</div>
+            </div>
+            <div class="slide" style="background-image: url('assets/luckybhaskar.webp');">
+                <div class="digits">3</div>
+            </div>
+            <div class="slide" style="background-image: url('assets/vemom3.webp');">
+                <div class="digits">4</div>
+            </div>
+            <div class="slide" style="background-image: url('assets/image.png');">
+                <div class="digits">5</div>
+            </div>
+            <div class="slide" style="background-image: url('assets/devra.webp');">
+                <div class="digits">6</div>
+            </div>
+            <div class="slide" style="background-image: url('assets/blackwarrant.webp');">
+                <div class="digits">7</div>
+            </div>
+            <div class="slide" style="background-image: url('assets/sexlife.webp');">
+                <div class="digits">8</div>
+            </div>
+            <div class="slide" style="background-image: url('assets/amran.webp');">
+                <div class="digits">9</div>
+            </div>
+            <div class="slide" style="background-image: url('assets/xokitty.webp');">
+                <div class="digits">10</div>
+            </div>
+        </div>
+        <button class="arrow next" onclick="moveSlide(1)">❯</button>
+    </div>
+
+    <div class="reasons">More reasons to join</div>
+
+    <!-- Card - Container for reasons -->
+    <div class="card-container">
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Enjoy on your TV</h5>
+                <p class="card-text">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and
+                    more.</p>
+                <div class="reason-img para1">
+                    <img src="assets/Screenshot 2025-01-30 002655.png" alt="" width="75px" height="65px">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Download your shows to watch offline</h5>
+                <p class="card-text">Save your favourites easily and always have something to watch.</p>
+                <div class="reason-img para2">
+                    <img src="assets/Screenshot 2025-01-30 003038.png" alt="" width="75px" height="75px">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Watch everywhere</h5>
+                <p class="card-text">Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+                <div class="reason-img para3">
+                    <img src="assets/Screenshot 2025-01-30 003046.png" alt="" width="70px" height="76px">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Create profiles for kids</h5>
+                <p class="card-text">Send kids on adventures with their favourite characters in a space made just for
+                    them — free with your membership.</p>
+                <div class="reason-img  para4">
+                    <img src="assets/Screenshot 2025-01-30 003054.png" alt="" width="65px" height="65px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="questions">Frequently Asked Questions</div>
+
+    <div class="question-container">
+        
+        <div class="asked-questions">
+            <span class="margins">What is Netflix ?</span><span class="plus plus1">+</span>
+        </div>
+
+        <div class="asked-questions">
+            <span class="margins">How much does Netflix cost ?</span><span class="plus plus2">+</span>
+        </div>
+
+        <div class="asked-questions">
+            <span class="margins">Where can i watch ?</span><span class="plus plus3">+</span>
+        </div>
+
+        <div class="asked-questions">
+            <span class="margins">How do i cancel ?</span><span class="plus plus4">+</span>
+        </div>
+
+        <div class="asked-questions">
+            <span class="margins">What can i watch on Netflix ?</span><span class="plus plus5">+</span>
+        </div>
+
+        <div class="asked-questions">
+            <span class="margins">Is Netflix good for kids ?</span><span class="plus plus6">+</span>
+        </div>
+
+    </div>
+
+    <div class="hero2">
+        <span>Ready to watch? Enter your email to create or restart your membership.</span>
+        <form id="emailForm">
+            <input type="email" id="emailInput" placeholder="Email address" class="email">
+            <button type="submit" class="btn red-btn hero2-red-btn">Get Started <span>&gt;</span></button>
+            <span id="emailError" class="error-message">✖ Email is required.</span>
+        </form>
+    </div>
+
+    <div class="contacts">Questions? Call 000-800-919-1743</div>
+
+    <div class="details">
+        <div class="sec">
+            <ul>
+                <li>FAQ</li>
+                <li>Investor Relations</li>
+                <li>Privacy</li>
+                <li>Speed Test</li>
+            </ul>
+        </div>
+
+        <div class="sec">
+            <ul>
+                <li>Help Centre</li>
+                <li>Jobs</li>
+                <li>Cookie Preferences</li>
+                <li>Legal Notices</li>
+            </ul>
+        </div>
+
+        <div class="sec">
+            <ul>
+                <li>Account</li>
+                <li>Ways to Watch</li>
+                <li>Corporate Information</li>
+                <li>Only on Netflix</li>
+            </ul>
+        </div>
+
+        <div class="sec sec4">
+            <ul>
+                <li>Media Centre</li>
+                <li>Terms of Use</li>
+                <li>Contact Us</li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hero2-btns">
+        <button class="btn language">English ⯆
+            <ul class="dropdown">
+                <li style="list-style: none; font-weight: bold;">Hindi</li>
+            </ul>
+        </button>
+    </div>
+
+    <div class="final-text">Netflix India</div>
+
+    <!-- Java script -->
+    <script>
+        let touched = false;
+        document.querySelector(".hero > :nth-child(1)").addEventListener("click", function () {
+            if (!touched) {
+                this.style.color = "whitesmoke";
+                this.style.textShadow = "0px 0px 10px whitesmoke, 0px 0px 20px whitesmoke, 0px 0px 40px whitesmoke, 0px 0px 80px whitesmoke";
+            } else {
+                this.style.color = "whitesmoke";
+                this.style.textShadow = "0px 0px 1px whitesmoke, 0px 0px 1px whitesmoke, 0px 0px 1px whitesmoke, 0px 0px 1px whitesmoke";
+            }
+            touched = !touched;
+        });
+
+        let currentIndex = 0;
+        function moveSlide(direction) {
+            const slider = document.querySelector('.slider');
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+
+            currentIndex += direction;
+            if (currentIndex < 0) {
+                currentIndex = totalSlides - 1;
+            } else if (currentIndex >= totalSlides) {
+                currentIndex = 0;
+            }
+
+            slider.style.transform = `translateX(-${currentIndex * (220)}px)`;
+        }
+
+        document.querySelectorAll(".sec ul li").forEach((item) => {
+            item.addEventListener("click", function () {
+                this.style.color = "red"; 
+
+                setTimeout(() => {
+                    this.style.color = ""; 
+                }, 100); 
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
